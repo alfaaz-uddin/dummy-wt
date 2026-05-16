@@ -9,12 +9,12 @@ unset($_SESSION['error']);
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Register - Task Management</title>
-    <link rel="stylesheet" href="/views/css/styles.css">
+    <link rel="stylesheet" href="/WT-Project/views/css/styles.css">
 </head>
 <body>
 <div class="auth-container">
     <div class="auth-box">
-        <h1>Task Management System</h1>
+        <h2>Task Management System</h2>
         <h2>Create Account</h2>
 
         <?php if ($error): ?>

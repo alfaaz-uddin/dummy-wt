@@ -14,7 +14,7 @@ close($conn);
 <meta charset="utf-8">
 <nav class="navbar">
     <div class="navbar-left">
-        <h1><a href="../../index.php?page=dashboard">📊 TaskPro</a></h1>
+        <h1><a href="../../index.php?page=dashboard">Task Management</a></h1>
     </div>
 
     <div class="navbar-center">
@@ -29,11 +29,11 @@ close($conn);
                         <a href="../../index.php?page=workspace&id=<?php echo $ws['id']; ?>"><?php echo htmlspecialchars(substr($ws['name'], 0, 20)); ?></a>
                     <?php endforeach; ?>
                     <hr>
-                    <a href="../../views/workspace/join.php">+ Join Workspace</a>
+                    <a href="/WT-Project/views/workspace/join.php">+ Join Workspace</a>
                 </div>
             </div>
         <?php else: ?>
-            <a href="../../views/workspace/join.php">Join Workspace</a>
+            <a href="/WT-Project/views/workspace/join.php">Join Workspace</a>
         <?php endif; ?>
 
         <a href="../../index.php?page=notifications">
@@ -46,7 +46,7 @@ close($conn);
 
     <div class="navbar-right">
         <div class="user-menu">
-            <img src="../../uploads/profile_pics/<?php echo htmlspecialchars($_SESSION['user_profile_pic'] ?? 'default.png'); ?>" alt="Profile">
+            <img src="../../public/uploads/profile_pics/<?php echo htmlspecialchars($_SESSION['user_profile_pic'] ?? 'default.png'); ?>" alt="Profile">
             <div class="dropdown">
                 <button class="dropdown-btn"><?php echo htmlspecialchars($_SESSION['user_name']); ?> ▼</button>
                 <div class="dropdown-content">

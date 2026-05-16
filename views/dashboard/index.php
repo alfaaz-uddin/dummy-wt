@@ -12,6 +12,7 @@ require_once '../../models/Workspace.php';
 require_once '../../models/Task.php';
 require_once '../../models/TimeLog.php';
 require_once '../../models/Notification.php';
+require_once '../../controllers/RouteController.php';
 
 $conn = connect();
 
