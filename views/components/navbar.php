@@ -1,7 +1,6 @@
 <?php
-session_start();
 
-require_once dirname(__DIR__, 2) . '/models/Connect.php';
+require_once dirname(__DIR__, 2) . '/models/db.php';
 require_once dirname(__DIR__, 2) . '/models/Close.php';
 require_once dirname(__DIR__, 2) . '/models/Notification.php';
 require_once dirname(__DIR__, 2) . '/models/Workspace.php';
@@ -47,7 +46,7 @@ close($conn);
 
     <div class="navbar-right">
         <div class="user-menu">
-            <img src="../../public/uploads/profile_pics/<?php echo htmlspecialchars($_SESSION['user_profile_pic'] ?? 'default.png'); ?>" alt="Profile">
+            <img src="../../uploads/profile_pics/<?php echo htmlspecialchars($_SESSION['user_profile_pic'] ?? 'default.png'); ?>" alt="Profile">
             <div class="dropdown">
                 <button class="dropdown-btn"><?php echo htmlspecialchars($_SESSION['user_name']); ?> ▼</button>
                 <div class="dropdown-content">

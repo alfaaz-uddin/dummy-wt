@@ -11,7 +11,7 @@ unset($_SESSION['msg']);
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Login - Task Management</title>
-    <link rel="stylesheet" href="../../public/css/styles.css">
+    <link rel="stylesheet" href="/WT-Project/views/css/styles.css">
 </head>
 <body>
 <div class="auth-container">
@@ -27,7 +27,7 @@ unset($_SESSION['msg']);
             <div class="alert alert-success"><?php echo $msg; ?></div>
         <?php endif; ?>
 
-        <form method="POST" action="../../controllers/AuthLoginController.php">
+        <form method="POST" action="/WT-Project/controllers/AuthLoginController.php">
             <div class="form-group">
                 <label>Email:</label>
                 <input type="email" name="email" required>
@@ -41,7 +41,7 @@ unset($_SESSION['msg']);
             <button type="submit" class="btn btn-primary">Login</button>
         </form>
 
-        <p>Don't have an account? <a href="register.php">Register here</a></p>
+        <p>Don't have an account? <a href="views/auth/register.php">Register here</a></p>
     </div>
 </div>
 </body>

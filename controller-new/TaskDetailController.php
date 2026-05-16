@@ -6,7 +6,7 @@ if (!isset($_SESSION['user_id'])) {
     exit;
 }
 
-require_once '../models/Connect.php';
+require_once '../models/db.php';
 require_once '../models/Close.php';
 require_once '../models/Task.php';
 require_once '../models/Comment.php';

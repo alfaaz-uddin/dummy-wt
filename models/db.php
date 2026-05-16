@@ -4,7 +4,7 @@ function connect() {
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "task_management_db";
+    $dbname = "task_management";
     
     $conn = mysqli_connect($servername, $username, $password, $dbname);
     

@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require_once '../models/Connect.php';
+require_once '../models/db.php';
 require_once '../models/Close.php';
 require_once '../models/User.php';
 
@@ -29,12 +29,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['user_role'] = $user['role'];
         $_SESSION['user_profile_pic'] = $user['profile_pic'];
         
-        header('Location: ../index.php?page=dashboard');
+        header('Location: /WT-Project/views/dashboard/');
     } else {
         $_SESSION['error'] = "Invalid email or password";
-        header('Location: ../views/auth/login.php');
+        header('Location: /WT-Project/index.php?page=login');
     }
 } else {
-    header('Location: ../views/auth/login.php');
+    header('Location: /WT-Project/index.php?page=login');
 }
 ?>
+

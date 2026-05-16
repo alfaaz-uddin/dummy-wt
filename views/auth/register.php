@@ -9,7 +9,7 @@ unset($_SESSION['error']);
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Register - Task Management</title>
-    <link rel="stylesheet" href="../../public/css/styles.css">
+    <link rel="stylesheet" href="/views/css/styles.css">
 </head>
 <body>
 <div class="auth-container">
@@ -58,6 +58,6 @@ unset($_SESSION['error']);
     </div>
 </div>
 
-<script src="../../public/js/validation.js"></script>
+<script src="/views/js/validation.js"></script>
 </body>
 </html>

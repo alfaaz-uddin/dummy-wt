@@ -17,7 +17,7 @@ unset($_SESSION['msg']);
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Join Workspace - Task Management</title>
-    <link rel="stylesheet" href="../../public/css/styles.css">
+    <link rel="stylesheet" href="/WT-Project/views/css/styles.css">
 </head>
 <body>
 <?php require_once '../components/navbar.php'; ?>

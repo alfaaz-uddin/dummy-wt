@@ -15,7 +15,7 @@ unset($_SESSION['error']);
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Change Password - Task Management</title>
-    <link rel="stylesheet" href="../../public/css/styles.css">
+    <link rel="stylesheet" href="/WT-Project/views/css/styles.css">
 </head>
 <body>
 <?php require_once '../components/navbar.php'; ?>
